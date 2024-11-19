@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTweaks</title>
+    <link rel="icon" type="image/jpg" href="favicon.jpg"> <!-- Updated favicon location -->
+    <style>
+        /* Set a light aqua background for the page */
+        body {
+            background-color: #34c3eb;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Top navigation bar */
+        .top-bar {
+            background-color: white;
+            width: 100%;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h2 {
+            color: black;
+            margin: 0;
+        }
+
+        /* Navigation buttons */
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+            position: relative;
+            right: 45px;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Section styles */
+        .section {
+            padding: 40px 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .section h3 {
+            font-size: 1.5em;
+            color: rgb(245, 245, 245); /* Light gray color */
+            margin-bottom: 10px;
+        }
+
+        /* Download button */
+        .download button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #d9534f; /* Red button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-out;
+        }
+
+        .download button:hover {
+            background-color: #c9302c;
+        }
+
+        /* Contact section */
+        .contact-box {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <div class="top-bar">
+        <h2>CTweaks</h2>
+        <div class="nav-buttons">
+            <a href="#about">About CTweaks</a>
+            <a href="#features">Features</a>
+            <a href="#how-to-use">How to Use</a>
+            <a href="#download">Download</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="section">
+        <h3>About CTweaks</h3>
+        <p>
+            CTweaks is a powerful C/C++ library created to enhance coding efficiency and functionality. It provides advanced math features,
+            unique data structures, and an optimized file-saving system to meet a variety of developer needs.
+            The library is designed to be modular and lightweight, allowing for easy integration into diverse projects.
+        </p>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="section">
+        <h3>Features</h3>
+        <ul>
+            <li><strong>Advanced Math Module:</strong> Includes optimized math functions and algorithms.</li>
+            <li><strong>Data Structures:</strong> Provides unique data structures, such as dictionaries and tuples.</li>
+            <li><strong>File System Module:</strong> Simplifies file-saving and data serialization.</li>
+            <li><strong>Custom Plugin System:</strong> Allows integration of custom plugins with the .ctpl extension.</li>
+            <li><strong>Logging System:</strong> Enables detailed logging for debugging and development insights.</li>
+        </ul>
+    </div>
+
+    <!-- How to Use Section -->
+    <div id="how-to-use" class="section">
+        <h3>How to Use</h3>
+        <p>
+            Integrating CTweaks into your project is simple. Follow these steps:
+        </p>
+        <ol>
+            <li>Download the latest version of CTweaks from the link below.</li>
+            <li>Include the library in your project by linking it in your IDE or build setup by visiting the install docs here: https://github.com/CTweaks/CTweaks/blob/main/INSTALL.md</li>
+            <li>Refer to the documentation for guidance on using each module and feature.</li>
+        </ol>
+    </div>
+
+    <!-- Download Section -->
+    <div id="download" class="section download">
+        <h3>Download CTweaks</h3>
+        <p>Click the button below to download the latest version of CTweaks.</p>
+        <button onclick="window.location.href='https://github.com/CTweaks/CTweaks/releases'">Download CTweaks</button>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h3>Contact Me</h3>
+        <div class="contact-box">
+            <p>For support or inquiries, please reach out via email:</p>
+            <p><a href="mailto:support@kyfstore.com">support@kyfstore.com</a></p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for smooth scroll with ease-out transition
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
