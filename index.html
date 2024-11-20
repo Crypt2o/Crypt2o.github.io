@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypt2o</title>
     <link rel="icon" type="image/jpg" href="favicon.jpg"> <!-- Updated favicon location -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> <!-- Import Fredoka One font -->
     <style>
-        /* Set a light aqua background for the page */
+        /* Set a lime green background for the page */
         body {
-            background-color: #34c3eb;
+            background-color: limegreen;
             margin: 0;
             font-family: Arial, sans-serif;
             color: white;
@@ -71,8 +72,8 @@
         .download button {
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #d9534f; /* Red button color */
-            color: white;
+            background-color: #d3d3d3; /* Turquoise color for the button */
+            color: rgb(25, 25, 25);
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -80,18 +81,7 @@
         }
 
         .download button:hover {
-            background-color: #c9302c;
-        }
-
-        /* Contact section */
-        .contact-box {
-            background-color: white;
-            color: black;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: center;
-            margin: 20px auto;
-            max-width: 600px;
+            background-color: #b0b0b0; /* Slightly darker turquoise on hover */
         }
     </style>
 </head>
@@ -105,7 +95,6 @@
             <a href="#features">Features</a>
             <a href="#how-to-use">How to Use</a>
             <a href="#download">Download</a>
-            <a href="#contact">Contact Me</a>
         </div>
     </div>
 
@@ -117,16 +106,17 @@
         </p>
     </div>
 
-<!-- Features Section -->
-<div id="features" class="section">
-    <h3>Features</h3>
-    <ul>
-        <li><strong>Gravity System:</strong> Configurable gravity for realistic movement and interactions.</li>
-        <li><strong>Velocity Management:</strong> Includes max fall speed and acceleration controls for fine-tuned motion.</li>
-        <li><strong>Lightweight Integration:</strong> Designed for seamless use with SFML projects.</li>
-        <li><strong>Modular Design:</strong> Add only the physics components you need to keep your project efficient.</li>
-    </ul>
-</div>
+    <!-- Features Section -->
+    <div id="features" class="section">
+        <h3>Features</h3>
+        <ul>
+            <li><strong>Gravity System:</strong> Configurable gravity for realistic movement and interactions.</li>
+            <li><strong>Velocity Management:</strong> Includes max fall speed and acceleration controls for fine-tuned motion.</li>
+            <li><strong>Lightweight Integration:</strong> Designed for seamless use with SFML projects.</li>
+            <li><strong>Modular Design:</strong> Add only the physics components you need to keep your project efficient.</li>
+        </ul>
+    </div>
+
     <!-- How to Use Section -->
     <div id="how-to-use" class="section">
         <h3>How to Use</h3>
@@ -135,9 +125,21 @@
         </p>
         <ol>
             <li>Download the latest version of Crypt2o from the link below.</li>
-            <li>Include the library in your project by linking it in your IDE or build setup by visiting the install docs here: <a href="https://github.com/Crypt2o/Crypt2o/blob/main/INSTALL.md">DOCS</a></li>
-            <li>Refer to the documentation for guidance on using each module and feature.</li>
+            <li>Include the library in your project by linking it in your IDE or build setup by visiting the install docs here: <a class="styled_link"  href="https://github.com/Crypt2o/Crypt2o/blob/main/INSTALL.md">https://github.com/Crypt2o/Crypt2o/blob/main/INSTALL.md</a></li>
+            <li>Refer to the documentation for guidance on using each module and feature here: <a class="styled_link" href="https://github.com/Crypt2o/Crypt2o/wiki">https://github.com/Crypt2o/Crypt2o/wiki</a></li>
         </ol>
+        <style>
+            .styled_link {
+                font-size: 18.5px;
+                color: white;
+                font-family: 'Fredoka One', sans-serif;
+                text-decoration: none;
+            }
+            
+            .styled_link:hover {
+                text-decoration: underline;
+            }
+        </style>
     </div>
 
     <!-- Download Section -->
@@ -145,15 +147,6 @@
         <h3>Download Crypt2o</h3>
         <p>Click the button below to download the latest version of Crypt2o.</p>
         <button onclick="window.location.href='https://github.com/Crypt2o/Crypt2o/releases'">Download Crypt2o</button>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact" class="section">
-        <h3>Contact Me</h3>
-        <div class="contact-box">
-            <p>For support or inquiries, please reach out via email:</p>
-            <p><a href="mailto:support@kyfstore.com">support@kyfstore.com</a></p>
-        </div>
     </div>
 
     <script>
